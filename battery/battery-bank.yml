@@ -21,6 +21,10 @@ connectors:
     pincolors: [BK, BK, BK, BK, BK]
   Charger1:
     type: MPPT
+    pinlabels: ['+', '-', 'Solar+', 'Sonar-']
+    pincolors: [RD, BK, RD, BK]
+  SonalPanels:
+    type: Solar
     pinlabels: ['+', '-']
     pincolors: [RD, BK]
 
@@ -35,6 +39,9 @@ cables:
   Negative1:
     wirecount: 4
     colors: [BK]
+  Solar:
+    wirecount: 2
+    colors: [RD, BK]
 
 connections:
   -
@@ -77,3 +84,11 @@ connections:
     - Battery4: [2]
     - Negative1: [4]
     - NegBus1: [4]
+  -
+    - SonalPanels: [1]
+    - Solar: [1]
+    - Charger1: [3]
+  -
+    - SonalPanels: [2]
+    - Solar: [2]
+    - Charger1: [4]
