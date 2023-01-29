@@ -1,0 +1,6 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 wires	0	m	Negative0, Positive0
+2	Cable, 4 wires	0	m	Negative1, Positive1
+3	Connector, 5 pins	2		NegBus1, PosBus1
+4	Connector, AGM, 2 pins	4		Battery1, Battery2, Battery3, Battery4
+5	Connector, MPPT, 2 pins	1		Charger1

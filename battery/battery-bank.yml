@@ -1,0 +1,79 @@
+connectors:
+  Battery1:
+    type: AGM
+    pinlabels: ['+', '-']
+    pincolors: [RD, BK]
+  Battery2:
+    type: AGM
+    pinlabels: ['+', '-']
+    pincolors: [RD, BK]
+  Battery3:
+    type: AGM
+    pinlabels: ['+', '-']
+    pincolors: [RD, BK]
+  Battery4:
+    type: AGM
+    pinlabels: ['+', '-']
+    pincolors: [RD, BK]
+  PosBus1:
+    pincolors: [RD, RD, RD, RD, RD]
+  NegBus1:
+    pincolors: [BK, BK, BK, BK, BK]
+  Charger1:
+    type: MPPT
+    pinlabels: ['+', '-']
+    pincolors: [RD, BK]
+
+cables:
+  Positive0:
+    colors: [RD]
+  Negative0:
+    colors: [BK]
+  Positive1:
+    wirecount: 4
+    colors: [RD]
+  Negative1:
+    wirecount: 4
+    colors: [BK]
+
+connections:
+  -
+    - PosBus1: [1]
+    - Positive1: [1]
+    - Battery1: [1]
+  -
+    - PosBus1: [2]
+    - Positive1: [2]
+    - Battery2: [1]
+  -
+    - PosBus1: [3]
+    - Positive1: [3]
+    - Battery3: [1]
+  -
+    - PosBus1: [4]
+    - Positive1: [4]
+    - Battery4: [1]
+  -
+    - PosBus1: [5]
+    - Positive0: [1]
+    - Charger1: [1]
+  -
+    - Charger1: [2]
+    - Negative0: [1]
+    - NegBus1: [5]
+  -
+    - Battery1: [2]
+    - Negative1: [1]
+    - NegBus1: [1]
+  -
+    - Battery2: [2]
+    - Negative1: [2]
+    - NegBus1: [2]
+  -
+    - Battery3: [2]
+    - Negative1: [3]
+    - NegBus1: [3]
+  -
+    - Battery4: [2]
+    - Negative1: [4]
+    - NegBus1: [4]
