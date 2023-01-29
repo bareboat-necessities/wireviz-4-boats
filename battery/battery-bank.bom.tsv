@@ -2,9 +2,9 @@ Id	Description	Qty	Unit	Designators
 1	Cable, 1 wires	0	m	Negative0, Positive0
 2	Cable, 2 wires	0	m	Solar
 3	Cable, 3 wires	0	m	ShorePwr
-4	Cable, 4 wires	0	m	Negative1, Positive1
-5	Connector, 5 pins	2		NegBus1, PosBus1
+4	Cable, 6 wires	0	m	Negative1, Positive1
+5	Connector, 7 pins	2		NegBus1, PosBus1
 6	Connector, AC 110V, 3 pins	1		AC_ShorePower
-7	Connector, AGM, 2 pins	4		Battery1, Battery2, Battery3, Battery4
+7	Connector, AGM, 2 pins	6		Battery1, Battery2, Battery3, Battery4, Battery5, Battery6
 8	Connector, MPPT, 7 pins	1		Charger1
 9	Connector, Solar, 2 pins	1		SonalPanels

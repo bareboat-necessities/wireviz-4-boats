@@ -168,6 +168,88 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	Battery5 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Battery5</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">AGM</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>+</td>
+    <td sides="tbl">RD</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#FF0000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>-</td>
+    <td sides="tbl">BK</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#000000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p2r">2</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Battery6 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Battery6</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">AGM</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>+</td>
+    <td sides="tbl">RD</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#FF0000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>-</td>
+    <td sides="tbl">BK</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#000000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p2r">2</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	PosBus1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -177,7 +259,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5-pin</td>
+   <td balign="left">7-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -227,6 +309,24 @@ graph {
     </td>
     <td port="p5r">5</td>
    </tr>
+   <tr>
+    <td sides="tbl">RD</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#FF0000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p6r">6</td>
+   </tr>
+   <tr>
+    <td sides="tbl">RD</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#FF0000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p7r">7</td>
+   </tr>
   </table>
  </td></tr>
 </table>
@@ -240,7 +340,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5-pin</td>
+   <td balign="left">7-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -283,6 +383,24 @@ graph {
    </tr>
    <tr>
     <td port="p5l">5</td>
+    <td sides="tbl">BK</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#000000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+   <tr>
+    <td port="p6l">6</td>
+    <td sides="tbl">BK</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#000000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+   <tr>
+    <td port="p7l">7</td>
     <td sides="tbl">BK</td>
     <td sides="tbr">
      <table border="0" cellborder="1"><tr>
@@ -476,7 +594,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	PosBus1:p5r:e -- Positive0:w1:w
+	PosBus1:p7r:e -- Positive0:w1:w
 	Positive0:w1:e -- Charger1:p1l:w
 	Positive0 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -494,7 +612,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>PosBus1:5</td>
+    <td>PosBus1:7</td>
     <td>
      1:RD
     </td>
@@ -516,7 +634,7 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
 	Charger1:p2r:e -- Negative0:w1:w
-	Negative0:w1:e -- NegBus1:p5l:w
+	Negative0:w1:e -- NegBus1:p7l:w
 	Negative0 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -537,7 +655,7 @@ graph {
     <td>
      1:BK
     </td>
-    <td>NegBus1:5</td>
+    <td>NegBus1:7</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -565,6 +683,12 @@ graph {
 	edge [color="#000000:#ff0000:#000000"]
 	PosBus1:p4r:e -- Positive1:w4:w
 	Positive1:w4:e -- Battery4:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	PosBus1:p5r:e -- Positive1:w5:w
+	Positive1:w5:e -- Battery5:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	PosBus1:p6r:e -- Positive1:w6:w
+	Positive1:w6:e -- Battery6:p1l:w
 	Positive1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -574,7 +698,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">4x</td>
+   <td balign="left">6x</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -644,6 +768,38 @@ graph {
      </table>
     </td>
    </tr>
+   <tr>
+    <td>PosBus1:5</td>
+    <td>
+     5:RD
+    </td>
+    <td>Battery5:1:+</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>PosBus1:6</td>
+    <td>
+     6:RD
+    </td>
+    <td>Battery6:1:+</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
    <tr><td>&nbsp;</td></tr>
   </table>
  </td></tr>
@@ -661,6 +817,12 @@ graph {
 	edge [color="#000000:#000000:#000000"]
 	Battery4:p2r:e -- Negative1:w4:w
 	Negative1:w4:e -- NegBus1:p4l:w
+	edge [color="#000000:#000000:#000000"]
+	Battery5:p2r:e -- Negative1:w5:w
+	Negative1:w5:e -- NegBus1:p5l:w
+	edge [color="#000000:#000000:#000000"]
+	Battery6:p2r:e -- Negative1:w6:w
+	Negative1:w6:e -- NegBus1:p6l:w
 	Negative1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -670,7 +832,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">4x</td>
+   <td balign="left">6x</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -733,6 +895,38 @@ graph {
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Battery5:2:-</td>
+    <td>
+     5:BK
+    </td>
+    <td>NegBus1:5</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Battery6:2:-</td>
+    <td>
+     6:BK
+    </td>
+    <td>NegBus1:6</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
