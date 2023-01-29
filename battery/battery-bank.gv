@@ -304,7 +304,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">MPPT</td>
-   <td balign="left">4-pin</td>
+   <td balign="left">7-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -353,6 +353,39 @@ graph {
     </td>
     <td port="p4r">4</td>
    </tr>
+   <tr>
+    <td port="p5l">5</td>
+    <td>Shore WH</td>
+    <td sides="tbl">WH</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#FFFFFF" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p5r">5</td>
+   </tr>
+   <tr>
+    <td port="p6l">6</td>
+    <td>Shore BK</td>
+    <td sides="tbl">BK</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#000000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p6r">6</td>
+   </tr>
+   <tr>
+    <td port="p7l">7</td>
+    <td>Shore GN</td>
+    <td sides="tbl">GN</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+    <td port="p7r">7</td>
+   </tr>
   </table>
  </td></tr>
 </table>
@@ -391,6 +424,52 @@ graph {
      </tr></table>
     </td>
     <td port="p2r">2</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	AC_ShorePower [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">AC_ShorePower</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">AC 110V</td>
+   <td balign="left">3-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td sides="tbl">WH</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#FFFFFF" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td sides="tbl">BK</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#000000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td sides="tbl">GN</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
    </tr>
   </table>
  </td></tr>
@@ -715,6 +794,83 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffffff:#000000"]
+	Charger1:p5r:e -- ShorePwr:w1:w
+	ShorePwr:w1:e -- AC_ShorePower:p1l:w
+	edge [color="#000000:#000000:#000000"]
+	Charger1:p6r:e -- ShorePwr:w2:w
+	ShorePwr:w2:e -- AC_ShorePower:p2l:w
+	edge [color="#000000:#00ff00:#000000"]
+	Charger1:p7r:e -- ShorePwr:w3:w
+	ShorePwr:w3:e -- AC_ShorePower:p3l:w
+	ShorePwr [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ShorePwr</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>Charger1:5:Shore WH</td>
+    <td>
+     1:WH
+    </td>
+    <td>AC_ShorePower:1</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Charger1:6:Shore BK</td>
+    <td>
+     2:BK
+    </td>
+    <td>AC_ShorePower:2</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Charger1:7:Shore GN</td>
+    <td>
+     3:GN
+    </td>
+    <td>AC_ShorePower:3</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
