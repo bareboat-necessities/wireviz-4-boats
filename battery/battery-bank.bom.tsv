@@ -7,4 +7,4 @@ Id	Description	Qty	Unit	Designators
 6	Connector, AC 110V, 3 pins	1		AC_ShorePower
 7	Connector, AGM, 2 pins	6		Battery1, Battery2, Battery3, Battery4, Battery5, Battery6
 8	Connector, MPPT, 7 pins	1		Charger1
-9	Connector, Solar, 2 pins	1		SonalPanels
+9	Connector, Solar, 2 pins	1		SolarPanels

@@ -508,11 +508,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	SonalPanels [label=<
+	SolarPanels [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">SonalPanels</td>
+   <td balign="left">SolarPanels</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -940,10 +940,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	SonalPanels:p1r:e -- Solar:w1:w
+	SolarPanels:p1r:e -- Solar:w1:w
 	Solar:w1:e -- Charger1:p3l:w
 	edge [color="#000000:#000000:#000000"]
-	SonalPanels:p2r:e -- Solar:w2:w
+	SolarPanels:p2r:e -- Solar:w2:w
 	Solar:w2:e -- Charger1:p4l:w
 	Solar [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -961,7 +961,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>SonalPanels:1:+</td>
+    <td>SolarPanels:1:+</td>
     <td>
      1:RD
     </td>
@@ -977,7 +977,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>SonalPanels:2:-</td>
+    <td>SolarPanels:2:-</td>
     <td>
      2:BK
     </td>
