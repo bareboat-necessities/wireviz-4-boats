@@ -462,7 +462,7 @@ graph {
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>Sonar-</td>
+    <td>Solar-</td>
     <td sides="tbl">BK</td>
     <td sides="tbr">
      <table border="0" cellborder="1"><tr>
@@ -981,7 +981,7 @@ graph {
     <td>
      2:BK
     </td>
-    <td>Charger1:4:Sonar-</td>
+    <td>Charger1:4:Solar-</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
