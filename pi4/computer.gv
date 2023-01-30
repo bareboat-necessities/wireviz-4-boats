@@ -275,6 +275,15 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	i2c_barometer_sensor [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">i2c_barometer_sensor</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	PyPilot_Motor_Controller [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -659,8 +668,8 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	IMU:e -- i2c_wires:w1:w
-	i2c_wires:w1:e -- pi4:p10l:w
+	pi4:p10r:e -- i2c_wires:w1:w
+	i2c_wires:w1:e -- IMU:w
 	i2c_wires [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -672,11 +681,45 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
+    <td>pi4:10:40 pin GPIO</td>
+    <td>
+     BK
+    </td>
+    <td>IMU:1:i2c</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	IMU:e -- i2c_grove_wires:w1:w
+	i2c_grove_wires:w1:e -- i2c_barometer_sensor:w
+	i2c_grove_wires [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">i2c_grove_wires</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
     <td>IMU:1:i2c</td>
     <td>
      BK
     </td>
-    <td>pi4:10:40 pin GPIO</td>
+    <td>i2c_barometer_sensor:1:i2c</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">

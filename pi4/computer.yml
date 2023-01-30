@@ -55,6 +55,10 @@ connectors:
     show_pincount: false
     style: simple
     pinlabels: [i2c]
+  i2c_barometer_sensor:
+    show_pincount: false
+    style: simple
+    pinlabels: [i2c]
   PyPilot_Motor_Controller:
     show_pincount: false
     style: simple
@@ -123,6 +127,11 @@ cables:
     show_wirecount: false
     show_wirenumbers: false
     colors: [BK]
+  i2c_grove_wires:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BK]
   gpio_wires:
     wirecount: 1
     show_wirecount: false
@@ -175,10 +184,14 @@ connections:
     - Radar_Ethernet_cable: 1
     - Radar: 1
   -
-    - IMU: 1
-    - i2c_wires: 1
     - pi4: 10
+    - i2c_wires: 1
+    - IMU: 1
   -
     - PyPilot_Motor_Controller: 1
     - gpio_wires: 1
     - pi4: 10
+  -
+    - IMU: 1
+    - i2c_grove_wires: 1
+    - i2c_barometer_sensor: 1
