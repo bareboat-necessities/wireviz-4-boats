@@ -556,31 +556,33 @@
 <!-- PyPilot_Motor_Controller -->
 <g id="node14" class="node">
 <title>PyPilot_Motor_Controller</title>
-<polygon fill="#ffffff" stroke="black" points="167,-149.5 0,-149.5 0,-126.5 167,-126.5 167,-149.5"/>
-<polygon fill="none" stroke="black" points="0.5,-126 0.5,-149 167.5,-149 167.5,-126 0.5,-126"/>
-<text text-anchor="start" x="4.5" y="-133.8" font-family="arial" font-size="14.00">PyPilot_Motor_Controller</text>
+<polygon fill="#ffffff" stroke="black" points="167,-125.5 0,-125.5 0,-102.5 167,-102.5 167,-125.5"/>
+<polygon fill="none" stroke="black" points="0.5,-102 0.5,-125 167.5,-125 167.5,-102 0.5,-102"/>
+<text text-anchor="start" x="4.5" y="-109.8" font-family="arial" font-size="14.00">PyPilot_Motor_Controller</text>
 </g>
 <!-- gpio_wires -->
 <g id="node28" class="node">
 <title>gpio_wires</title>
-<polygon fill="#ffffff" stroke="black" points="707,-202 311,-202 311,-116 707,-116 707,-202"/>
-<polygon fill="none" stroke="black" points="311,-179 311,-202 707,-202 707,-179 311,-179"/>
-<text text-anchor="start" x="474" y="-186.8" font-family="arial" font-size="14.00">gpio_wires</text>
-<text text-anchor="start" x="412" y="-165.8" font-family="arial" font-size="14.00"> </text>
-<text text-anchor="start" x="313" y="-146.8" font-family="arial" font-size="14.00">PyPilot_Motor_Controller:1:gpio</text>
-<text text-anchor="start" x="519" y="-146.8" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;WH &#160;&#160;&#160;</text>
-<text text-anchor="start" x="581" y="-146.8" font-family="arial" font-size="14.00">pi4:10:40 pin GPIO</text>
-<polygon fill="#000000" stroke="transparent" points="311,-139 311,-141 707,-141 707,-139 311,-139"/>
-<polygon fill="#ffffff" stroke="transparent" points="311,-137 311,-139 707,-139 707,-137 311,-137"/>
-<polygon fill="#000000" stroke="transparent" points="311,-135 311,-137 707,-137 707,-135 311,-135"/>
-<text text-anchor="start" x="412" y="-121.8" font-family="arial" font-size="14.00"> </text>
+<polygon fill="#ffffff" stroke="black" points="707,-201.5 311,-201.5 311,-92.5 707,-92.5 707,-201.5"/>
+<polygon fill="none" stroke="black" points="311,-178 311,-201 707,-201 707,-178 311,-178"/>
+<text text-anchor="start" x="474" y="-185.8" font-family="arial" font-size="14.00">gpio_wires</text>
+<polygon fill="none" stroke="black" points="311,-155 311,-178 707,-178 707,-155 311,-155"/>
+<text text-anchor="start" x="481.5" y="-162.8" font-family="arial" font-size="14.00">to UART</text>
+<text text-anchor="start" x="412" y="-141.8" font-family="arial" font-size="14.00"> </text>
+<text text-anchor="start" x="313" y="-122.8" font-family="arial" font-size="14.00">PyPilot_Motor_Controller:1:gpio</text>
+<text text-anchor="start" x="519" y="-122.8" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;WH &#160;&#160;&#160;</text>
+<text text-anchor="start" x="581" y="-122.8" font-family="arial" font-size="14.00">pi4:10:40 pin GPIO</text>
+<polygon fill="#000000" stroke="transparent" points="311,-115 311,-117 707,-117 707,-115 311,-115"/>
+<polygon fill="#ffffff" stroke="transparent" points="311,-113 311,-115 707,-115 707,-113 311,-113"/>
+<polygon fill="#000000" stroke="transparent" points="311,-111 311,-113 707,-113 707,-111 311,-111"/>
+<text text-anchor="start" x="412" y="-97.8" font-family="arial" font-size="14.00"> </text>
 </g>
 <!-- PyPilot_Motor_Controller&#45;&#45;gpio_wires -->
 <g id="edge27" class="edge">
 <title>PyPilot_Motor_Controller:e&#45;&#45;gpio_wires:w</title>
-<path fill="none" stroke="#000000" stroke-width="2" d="M167,-136C231,-136 247,-136 311,-136"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M167,-138C231,-138 247,-138 311,-138"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M167,-140C231,-140 247,-140 311,-140"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M167,-112C231,-112 247,-112 311,-112"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M167,-114C231,-114 247,-114 311,-114"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M167,-116C231,-116 247,-116 311,-116"/>
 </g>
 <!-- USB_host_cable&#45;&#45;usb_hub -->
 <g id="edge2" class="edge">
@@ -676,9 +678,9 @@
 <!-- gpio_wires&#45;&#45;pi4 -->
 <g id="edge28" class="edge">
 <title>gpio_wires:e&#45;&#45;pi4:w</title>
-<path fill="none" stroke="#000000" stroke-width="2" d="M707,-136C775.48,-137.49 786.39,-178.49 851,-177"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M707,-138C773.54,-138 784.46,-179 851,-179"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M707,-140C771.61,-138.51 782.52,-179.51 851,-181"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M707,-112C779.22,-113.89 782.78,-178.89 851,-177"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M707,-114C777.22,-114 780.78,-179 851,-179"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M707,-116C775.22,-114.11 778.78,-179.11 851,-181"/>
 </g>
 </g>
 </svg>
@@ -696,10 +698,17 @@
   <td style="border:1px solid #000000; padding: 4px">Cable, 1 wires</td>
   <td style="border:1px solid #000000; padding: 4px; text-align:right">0</td>
   <td style="border:1px solid #000000; padding: 4px">m</td>
-  <td style="border:1px solid #000000; padding: 4px">Ethernet_cable1, Ethernet_cable2, HDMI_cable, Radar_Ethernet_cable, USB_cable, USB_host_cable, gpio_wires, i2c_grove_wires, i2c_wires, keyboard_cable, mouse_cable, usb_cable, usb_cable_to_AIS, usb_gps_cable</td>
+  <td style="border:1px solid #000000; padding: 4px">Ethernet_cable1, Ethernet_cable2, HDMI_cable, Radar_Ethernet_cable, USB_cable, USB_host_cable, i2c_grove_wires, i2c_wires, keyboard_cable, mouse_cable, usb_cable, usb_cable_to_AIS, usb_gps_cable</td>
  </tr>
  <tr>
   <td style="border:1px solid #000000; padding: 4px">2</td>
+  <td style="border:1px solid #000000; padding: 4px">Cable, to UART, 1 wires</td>
+  <td style="border:1px solid #000000; padding: 4px; text-align:right">0</td>
+  <td style="border:1px solid #000000; padding: 4px">m</td>
+  <td style="border:1px solid #000000; padding: 4px">gpio_wires</td>
+ </tr>
+ <tr>
+  <td style="border:1px solid #000000; padding: 4px">3</td>
   <td style="border:1px solid #000000; padding: 4px">Connector</td>
   <td style="border:1px solid #000000; padding: 4px; text-align:right">14</td>
   <td style="border:1px solid #000000; padding: 4px"></td>

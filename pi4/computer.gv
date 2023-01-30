@@ -746,6 +746,11 @@ graph {
   </tr></table>
  </td></tr>
  <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">to UART</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>

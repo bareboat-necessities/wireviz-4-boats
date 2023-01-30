@@ -134,6 +134,7 @@ cables:
     colors: [BK]
   gpio_wires:
     wirecount: 1
+    type: to UART
     show_wirecount: false
     show_wirenumbers: false
     colors: [WH]
