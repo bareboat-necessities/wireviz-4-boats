@@ -1,0 +1,17 @@
+connectors:
+  pi4:
+    show_pincount: false
+    pinlabels:
+      - Power (USB-C)
+      - HDMI 0
+      - HDMI 1
+      - Audio Out
+      - Ethernet
+      - USB 3.0
+      - USB 3.0
+      - USB 2.0
+      - USB 2.0
+      - 40 pin GPIO
+      - Micro-SD card slot
+      - 2-lane MIPI DSI display port
+      - 2-lane MIPI CSI camera port
