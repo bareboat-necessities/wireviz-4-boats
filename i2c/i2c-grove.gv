@@ -19,7 +19,6 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td port="p1l">1</td>
     <td>SCL</td>
     <td sides="tbl">YE</td>
     <td sides="tbr">
@@ -27,9 +26,9 @@ graph {
       <td bgcolor="#FFFF00" width="8" height="8" fixedsize="true"></td>
      </tr></table>
     </td>
+    <td port="p1r">1</td>
    </tr>
    <tr>
-    <td port="p2l">2</td>
     <td>SDA</td>
     <td sides="tbl">WH</td>
     <td sides="tbr">
@@ -37,9 +36,9 @@ graph {
       <td bgcolor="#FFFFFF" width="8" height="8" fixedsize="true"></td>
      </tr></table>
     </td>
+    <td port="p2r">2</td>
    </tr>
    <tr>
-    <td port="p3l">3</td>
     <td>VCC</td>
     <td sides="tbl">RD</td>
     <td sides="tbr">
@@ -47,9 +46,9 @@ graph {
       <td bgcolor="#FF0000" width="8" height="8" fixedsize="true"></td>
      </tr></table>
     </td>
+    <td port="p3r">3</td>
    </tr>
    <tr>
-    <td port="p4l">4</td>
     <td>GND</td>
     <td sides="tbl">BK</td>
     <td sides="tbr">
@@ -57,7 +56,100 @@ graph {
       <td bgcolor="#000000" width="8" height="8" fixedsize="true"></td>
      </tr></table>
     </td>
+    <td port="p4r">4</td>
    </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#000000"]
+	i2c_grove:p1r:e -- grove:w1:w
+	edge [color="#000000:#ffffff:#000000"]
+	i2c_grove:p2r:e -- grove:w2:w
+	edge [color="#000000:#ff0000:#000000"]
+	i2c_grove:p3r:e -- grove:w3:w
+	edge [color="#000000:#000000:#000000"]
+	i2c_grove:p4r:e -- grove:w4:w
+	grove [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">grove</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">4x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>i2c_grove:1:SCL</td>
+    <td>
+     1:YE
+    </td>
+    <td><!-- 1_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>i2c_grove:2:SDA</td>
+    <td>
+     2:WH
+    </td>
+    <td><!-- 2_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>i2c_grove:3:VCC</td>
+    <td>
+     3:RD
+    </td>
+    <td><!-- 3_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>i2c_grove:4:GND</td>
+    <td>
+     4:BK
+    </td>
+    <td><!-- 4_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
   </table>
  </td></tr>
 </table>

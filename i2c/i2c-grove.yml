@@ -3,3 +3,13 @@ connectors:
     pincount: 4
     pinlabels: [SCL, SDA, VCC, GND]
     pincolors: [YE, WH, RD, BK]
+
+cables:
+  grove:
+    wirecount: 4
+    colors: [YE, WH, RD, BK]
+
+connections:
+  -
+    - i2c_grove: [1-4]
+    - grove: [1-4]
