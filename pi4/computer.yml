@@ -1,0 +1,184 @@
+connectors:
+  pi4:
+    show_pincount: false
+    pinlabels:
+      - Power (USB-C)
+      - HDMI 0
+      - HDMI 1
+      - Audio Out
+      - Ethernet
+      - USB 2.0 top
+      - USB 2.0 bottom
+      - USB 3.0 top
+      - USB 3.0 bottom
+      - 40 pin GPIO
+      - Micro-SD card slot
+      - 2-lane MIPI DSI display port
+      - 2-lane MIPI CSI camera port
+  usb_hub:
+    show_pincount: false
+    pinlabels: [USB 1, USB 2, USB 3, USB 4, USB Host, Power]
+  Ethernet_Switch:
+    show_pincount: false
+    pinlabels: [Eth 1, Eth 2, Eth 3, Eth 4, Power]
+  Router:
+    show_pincount: false
+    pinlabels: [Lan Eth, Wan Eth, Wi-Fi Ant, Power]
+  touchscreen:
+    show_pincount: false
+    pinlabels: [HDMI, USB, Power]
+  keyboard:
+    show_pincount: false
+    style: simple
+    pinlabels: [USB]
+  mouse:
+    show_pincount: false
+    style: simple
+    pinlabels: [USB]
+  GPS_usb:
+    show_pincount: false
+    style: simple
+    pinlabels: [USB]
+  NMEA_Mux:
+    show_pincount: false
+    style: simple
+    pinlabels: [USB]
+  AIS:
+    show_pincount: false
+    style: simple
+    pinlabels: [USB]
+  Radar:
+    show_pincount: false
+    style: simple
+    pinlabels: [Ethernet]
+  IMU:
+    show_pincount: false
+    style: simple
+    pinlabels: [i2c]
+  PyPilot_Motor_Controller:
+    show_pincount: false
+    style: simple
+    pinlabels: [gpio]
+
+cables:
+  USB_host_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BU]
+  USB_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BK]
+  HDMI_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BK]
+  mouse_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    wirelabels: []
+    colors: [BK]
+  usb_gps_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    wirelabels: []
+    colors: [BK]
+  keyboard_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BK]
+  Ethernet_cable1:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [YE]
+  Ethernet_cable2:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [WH]
+  Radar_Ethernet_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [RD]
+  usb_cable:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BU]
+  usb_cable_to_AIS:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BK]
+  i2c_wires:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [BK]
+  gpio_wires:
+    wirecount: 1
+    show_wirecount: false
+    show_wirenumbers: false
+    colors: [WH]
+
+connections:
+  -
+    - pi4: 8
+    - USB_host_cable: 1
+    - usb_hub: 5
+  -
+    - pi4: 6
+    - USB_cable: 1
+    - touchscreen: 2
+  -
+    - GPS_usb: 1
+    - usb_gps_cable: 1
+    - pi4: 7
+  -
+    - pi4: 2
+    - HDMI_cable: 1
+    - touchscreen: 1
+  -
+    - usb_hub: 1
+    - keyboard_cable: 1
+    - keyboard: 1
+  -
+    - usb_hub: 2
+    - mouse_cable: 1
+    - mouse: 1
+  -
+    - Ethernet_Switch: 1
+    - Ethernet_cable1: 1
+    - Router: 1
+  -
+    - Ethernet_Switch: 3
+    - Ethernet_cable2: 1
+    - pi4: 5
+  -
+    - usb_hub: 3
+    - usb_cable: 1
+    - NMEA_Mux: 1
+  -
+    - usb_hub: 4
+    - usb_cable_to_AIS: 1
+    - AIS: 1
+  -
+    - Ethernet_Switch: 2
+    - Radar_Ethernet_cable: 1
+    - Radar: 1
+  -
+    - IMU: 1
+    - i2c_wires: 1
+    - pi4: 10
+  -
+    - PyPilot_Motor_Controller: 1
+    - gpio_wires: 1
+    - pi4: 10
